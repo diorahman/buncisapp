@@ -1,0 +1,17 @@
+<div class="page">
+  <header class="action-bar fixed-top">
+      <a class="app-icon action">
+        <i class="icon-location-marker"></i>
+      </a>
+      <h1 class="title">Buncis App</h1>
+      <ul class="actions pull-right">
+        <li><a class="action" title="Add Point" ng-click='push("/add-point")'><i class="icon-new"></i></a></li>
+        <li><a class="action" title="Refresh" ng-click='refresh()'><i class="icon-refresh"></i></a></li>
+        <li><a class="action" title="Account" data-next='/next' ng-click='push("/account")'><i class="icon-person"></i></a></li>
+        <li><a class="action" title="Settings" data-next-='/next' ng-click='push("/settings")'><i class="icon-settings"></i></a></li>
+      </ul>
+    </header>
+    <div resize class="content inset">
+      THIS BUNCIS APP HAS SCREEN WIDTH {{width}} !!!
+    </div>
+</div>

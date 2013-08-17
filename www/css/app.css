@@ -1,0 +1,18 @@
+.icon-action-left{
+  margin-left: -10px;
+}
+
+.icon-action-app-left{
+  position: absolute;
+  left: 20px;
+}
+
+.action-bar .app-icon {
+  position: relative;
+  padding: 8px 0;
+  margin-left: 0px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+

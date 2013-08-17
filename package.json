@@ -1,0 +1,15 @@
+{
+  "name": "buncis",
+  "version": "0.0.0",
+  "description": "phonegap (for android) fries angular example",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dhi Aurrahman <diorahman@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.3.5"
+  }
+}
