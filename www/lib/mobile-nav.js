@@ -7,12 +7,15 @@
 angular.module('ajoslin.mobile-navigate', [])
 .run(['$navigate', '$rootScope', function($navigate, $rootScope) {
 
-  document.addEventListener("customnavigation", function(e){
+  function customNavigation(e){
     if(e.transition)
     $rootScope.$apply(function() {
       $navigate.go(e.transition.path, e.transition.type, false)
     })
-  })
+  }
+
+  if(navigator.userAgent.indexOf('Mac') > -1)
+  document.addEventListener("customnavigation", customNavigation, false);
 
   //Android back button functionality for phonegap
   document.addEventListener("deviceready", function() {
@@ -24,6 +27,10 @@ angular.module('ajoslin.mobile-navigate', [])
         }
       });
     });
+
+    document.removeEventListener("customnavigation", customNavigation, false);
+    document.addEventListener("customnavigation", customNavigation, false);
+
   });
 }]);
 /*

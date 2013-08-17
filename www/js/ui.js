@@ -154,8 +154,9 @@
 
   // Attach event handler to close the spinner unless target is a spinner item
   var eventType = navigator.userAgent.indexOf('Mac') > -1 ? 'click' : 'touchend'
-  var eventItem = new Event("customnavigation")
-  
+  var eventItem = document.createEvent("Event")
+  eventItem.initEvent("customnavigation",true,true); 
+
   document.addEventListener(eventType, function (e) {
     if (!getSpinnerTarget(e) && !getTarget(e)) {
       var spinners = document.querySelectorAll('.spinner'),
@@ -166,16 +167,13 @@
     }else{
       var item = getSpinnerTarget(e)
       if(item){
-
         var next = '/' + item.querySelector('a').innerHTML.toLowerCase().split(' ').join('-')
         eventItem.transition = {
           type : 'stack',
           path : next
         }
-
         document.dispatchEvent(eventItem)
       }
-      
     }
   });
 
