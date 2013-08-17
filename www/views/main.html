@@ -12,6 +12,11 @@
       </ul>
     </header>
     <div resize class="content inset">
-      THIS BUNCIS APP HAS SCREEN WIDTH {{width}} !!!
+      <ul class="list inset">
+        <li class="list-divider">Points</li>
+        <li ng-repeat="point in points" ng-click="push('/edit-point')">
+          <a>{{point.title}}</a>
+        </li>
+      </ul>
     </div>
 </div>

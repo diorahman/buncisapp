@@ -13,6 +13,10 @@ app.config(function ($routeProvider) {
     controller: 'AddPointController',
     templateUrl: 'views/add-point.html'
   })
+  .when('/edit-point', {
+    controller: 'EditPointController',
+    templateUrl: 'views/edit-point.html'
+  })
   .when('/account', {
     controller: 'AccountController',
     templateUrl: 'views/account.html'
