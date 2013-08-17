@@ -6,6 +6,8 @@ Tested on Nexus4 Android 4.3
 
 ![image](http://i.cloudup.com/GYSwtQC9GV.png)
 ![image](http://i.cloudup.com/6E3DYfIynU.png)
+![image](http://i.cloudup.com/lCDQOV0wuC.png)
+
 
 ###AUTHOR
 Dhi Aurrahman <diorahman@gmail.com>
