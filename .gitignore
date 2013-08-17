@@ -1,6 +1,6 @@
 .DS_Store
 .cordova
-platform
+platforms
 merges
 plugins
 node_modules
