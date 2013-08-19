@@ -57,6 +57,7 @@
 }
 
 .mb-stack.mb-in {
+  z-index: 1;
   -webkit-animation: push 0.2s;
 }
 
